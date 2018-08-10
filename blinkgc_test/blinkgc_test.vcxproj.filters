@@ -293,9 +293,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\blinkgc\platform\asm\SaveRegisters_win64.asm">
-      <Filter>blinkgc\platform\asm</Filter>
-    </None>
     <None Include="..\blinkgc\wtf\dtoa\COPYING">
       <Filter>blinkgc\wtf\dtoa</Filter>
     </None>
@@ -946,5 +943,10 @@
     <ClInclude Include="..\blinkgc\platform\traceevent.h">
       <Filter>blinkgc\platform</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\blinkgc\platform\asm\SaveRegisters_win64.asm">
+      <Filter>blinkgc\platform\asm</Filter>
+    </CustomBuild>
   </ItemGroup>
 </Project>

@@ -305,7 +305,7 @@ public:
         // the stack start of the main thread, we judge that we are in
         // the main thread.
         if (LIKELY(addressDiff < s_mainThreadUnderestimatedStackSize)) {
-            ASSERT(**s_threadSpecific == mainThreadState());
+            //ASSERT(**s_threadSpecific == mainThreadState());
             return mainThreadState();
         }
         // TLS lookup is slow.

@@ -79,35 +79,39 @@ public:
 };
 TestPersistent* testPersistent = NULL;
 
+
+
+void gcTest()
+{
+	blink::Persistent<EventTarget> p = new EventTarget;
+	
+	if (!testPersistent)
+		testPersistent = new TestPersistent();
+	testPersistent->m_ungc = new Ungc();
+
+	//GC必需在主线程中调用
+	((blink::WebThreadImpl*)(blink::Platform::current()->currentThread()))->fire();
+	blink::Heap::collectAllGarbage();
+}
+
 void main()
 {
 	_CrtSetDbgFlag(_CrtSetDbgFlag(_CRTDBG_REPORT_FLAG) | _CRTDBG_LEAK_CHECK_DF);
 
 	blink::initialize();
 
-	new EventTarget();
-	new EventTarget();
-	new EventTarget();
-	new EventTarget();
-	new EventTarget();
-	new EventTarget();
-	new EventTarget();
-	new EventTarget();
+	gcTest();
 
-	if (!testPersistent)
-		testPersistent = new TestPersistent();
-	testPersistent->m_ungc = new Ungc();
 	//如果执行以下代面则m_ungc能释构，注释掉则不能
-	//if (testPersistent)
-	//{
-	//	delete testPersistent;
-	//}
+	if (testPersistent)
+	{
+		delete testPersistent;
+		testPersistent = NULL;
+	}
 
+	//GC必需在主线程中调用
 	((blink::WebThreadImpl*)(blink::Platform::current()->currentThread()))->fire();
 	blink::Heap::collectAllGarbage();
-	((blink::WebThreadImpl*)(blink::Platform::current()->currentThread()))->fire();
-	blink::Heap::collectAllGarbage();
-	
 
 	blink::uninitialize();
 }

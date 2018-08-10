@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0F29554B-46DE-42E4-A69B-C48F42728400}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>blinkgc_test</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)blinkgc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)blinkgc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)blinkgc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)blinkgc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\blinkgc\platform\asm\SaveRegisters_x86.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\platform\heap\BlinkGCMemoryDumpProvider.cpp" />
+    <ClCompile Include="..\blinkgc\platform\heap\CallbackStack.cpp" />
+    <ClCompile Include="..\blinkgc\platform\heap\GCInfo.cpp" />
+    <ClCompile Include="..\blinkgc\platform\heap\Heap.cpp" />
+    <ClCompile Include="..\blinkgc\platform\heap\HeapAllocator.cpp" />
+    <ClCompile Include="..\blinkgc\platform\heap\PagePool.cpp" />
+    <ClCompile Include="..\blinkgc\platform\heap\PersistentNode.cpp" />
+    <ClCompile Include="..\blinkgc\platform\heap\SafePoint.cpp" />
+    <ClCompile Include="..\blinkgc\platform\heap\StackFrameDepth.cpp" />
+    <ClCompile Include="..\blinkgc\platform\heap\ThreadState.cpp" />
+    <ClCompile Include="..\blinkgc\platform\Platform.cpp" />
+    <ClCompile Include="..\blinkgc\platform\ScriptForbiddenScope.cpp" />
+    <ClCompile Include="..\blinkgc\web\CurrentTimeImpl.cpp" />
+    <ClCompile Include="..\blinkgc\web\WebKit.cpp" />
+    <ClCompile Include="..\blinkgc\web\WebMemoryDumpProvider.cpp" />
+    <ClCompile Include="..\blinkgc\web\WebScheduler.cpp" />
+    <ClCompile Include="..\blinkgc\web\WebSchedulerImpl.cpp" />
+    <ClCompile Include="..\blinkgc\web\WebThreadImpl.cpp" />
+    <ClCompile Include="..\blinkgc\web\WebTimerBase.cpp" />
+    <ClCompile Include="..\blinkgc\web\WebTraceLocation.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\AddressSpaceRandomization.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\ArrayBuffer.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\ArrayBufferBuilder.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\ArrayBufferContents.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\ArrayBufferView.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\ArrayPiece.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\Assertions.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\BitVector.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\CryptographicallyRandomNumber.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\CurrentTime.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\DataLog.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\DateMath.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\DefaultAllocator.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\dtoa.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\dtoa\bignum-dtoa.cc" />
+    <ClCompile Include="..\blinkgc\wtf\dtoa\bignum.cc" />
+    <ClCompile Include="..\blinkgc\wtf\dtoa\cached-powers.cc" />
+    <ClCompile Include="..\blinkgc\wtf\dtoa\diy-fp.cc" />
+    <ClCompile Include="..\blinkgc\wtf\dtoa\double-conversion.cc" />
+    <ClCompile Include="..\blinkgc\wtf\dtoa\fast-dtoa.cc" />
+    <ClCompile Include="..\blinkgc\wtf\dtoa\fixed-dtoa.cc" />
+    <ClCompile Include="..\blinkgc\wtf\dtoa\strtod.cc" />
+    <ClCompile Include="..\blinkgc\wtf\DynamicAnnotations.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\FastMalloc.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\FilePrintStream.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\HashTable.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\InstanceCounter.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\MainThread.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\PageAllocator.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\PartitionAlloc.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\Partitions.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\PrintStream.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\RefCountedLeakCounter.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\SizeLimits.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\AtomicString.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\AtomicStringCF.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\Base64.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\CString.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\qt4\UnicodeQt4.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\StringBuilder.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\StringCF.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\StringConcatenate.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\StringImpl.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\StringImplCF.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\StringStatics.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\TextCodec.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\TextCodecLatin1.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\TextCodecReplacement.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\TextCodecUserDefined.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\TextCodecUTF16.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\TextCodecUTF8.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\TextPosition.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\UTF8.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\WTFString.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\text\WTFStringUtil.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\ThreadingPthreads.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\ThreadingWin.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\ThreadSpecificWin.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\TypeTraits.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\WTF.cpp" />
+    <ClCompile Include="..\blinkgc\wtf\WTFThreadData.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\blinkgc\platform\asm\SaveRegisters_win64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ml64 /Fo $(IntDir)%(fileName).obj /c %(FullPath)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(fileName).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ml64 /Fo $(IntDir)%(fileName).obj /c %(FullPath)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(fileName).obj</Outputs>
+    </CustomBuild>
+    <None Include="..\blinkgc\platform\heap\blink_heap.gypi" />
+    <None Include="..\blinkgc\platform\heap\BUILD.gn" />
+    <None Include="..\blinkgc\platform\heap\DEPS" />
+    <None Include="..\blinkgc\platform\heap\OWNERS" />
+    <None Include="..\blinkgc\wtf\BUILD.gn" />
+    <None Include="..\blinkgc\wtf\CONTRIBUTORS.pthreads-win32" />
+    <None Include="..\blinkgc\wtf\dtoa\COPYING" />
+    <None Include="..\blinkgc\wtf\dtoa\LICENSE" />
+    <None Include="..\blinkgc\wtf\dtoa\README" />
+    <None Include="..\blinkgc\wtf\OWNERS" />
+    <None Include="..\blinkgc\wtf\text\StringImplMac.mm" />
+    <None Include="..\blinkgc\wtf\text\StringMac.mm" />
+    <None Include="..\blinkgc\wtf\wtf.gyp" />
+    <None Include="..\blinkgc\wtf\wtf.gypi" />
+    <None Include="..\blinkgc\wtf\wtf.sln" />
+    <None Include="..\blinkgc\wtf\wtf.vcxproj" />
+    <None Include="..\blinkgc\wtf\wtf.vcxproj.filters" />
+    <None Include="..\blinkgc\wtf\wtf_config.vcxproj" />
+    <None Include="..\blinkgc\wtf\wtf_config.vcxproj.filters" />
+    <None Include="..\blinkgc\wtf\wtf_tests.gyp" />
+    <None Include="..\blinkgc\wtf\wtf_tests.sln" />
+    <None Include="..\blinkgc\wtf\wtf_unittests.vcxproj" />
+    <None Include="..\blinkgc\wtf\wtf_unittests.vcxproj.filters" />
+    <None Include="..\blinkgc\wtf\wtf_unittest_helpers.vcxproj" />
+    <None Include="..\blinkgc\wtf\wtf_unittest_helpers.vcxproj.filters" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\blinkgc\platform\heap\BlinkGCMemoryDumpProvider.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\CallbackStack.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\GarbageCollected.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\GCInfo.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\Handle.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\Heap.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\HeapAllocator.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\HeapLinkedStack.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\HeapTerminatedArray.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\HeapTerminatedArrayBuilder.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\InlinedGlobalMarkingVisitor.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\MarkingVisitor.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\MarkingVisitorImpl.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\PageMemory.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\PagePool.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\PersistentNode.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\SafePoint.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\StackFrameDepth.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\ThreadingTraits.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\ThreadState.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\TraceTraits.h" />
+    <ClInclude Include="..\blinkgc\platform\heap\Visitor.h" />
+    <ClInclude Include="..\blinkgc\platform\Platform.h" />
+    <ClInclude Include="..\blinkgc\platform\PlatformExport.h" />
+    <ClInclude Include="..\blinkgc\platform\ScriptForbiddenScope.h" />
+    <ClInclude Include="..\blinkgc\platform\Task.h" />
+    <ClInclude Include="..\blinkgc\platform\traceevent.h" />
+    <ClInclude Include="..\blinkgc\web\CurrentTimeImpl.h" />
+    <ClInclude Include="..\blinkgc\web\WebKit.h" />
+    <ClInclude Include="..\blinkgc\web\WebSchedulerImpl.h" />
+    <ClInclude Include="..\blinkgc\web\WebThreadImpl.h" />
+    <ClInclude Include="..\blinkgc\web\WebTimerBase.h" />
+    <ClInclude Include="..\blinkgc\wtf\AddressSanitizer.h" />
+    <ClInclude Include="..\blinkgc\wtf\AddressSpaceRandomization.h" />
+    <ClInclude Include="..\blinkgc\wtf\Alignment.h" />
+    <ClInclude Include="..\blinkgc\wtf\ArrayBuffer.h" />
+    <ClInclude Include="..\blinkgc\wtf\ArrayBufferBuilder.h" />
+    <ClInclude Include="..\blinkgc\wtf\ArrayBufferContents.h" />
+    <ClInclude Include="..\blinkgc\wtf\ArrayBufferView.h" />
+    <ClInclude Include="..\blinkgc\wtf\ArrayPiece.h" />
+    <ClInclude Include="..\blinkgc\wtf\ASCIICType.h" />
+    <ClInclude Include="..\blinkgc\wtf\Assertions.h" />
+    <ClInclude Include="..\blinkgc\wtf\Atomics.h" />
+    <ClInclude Include="..\blinkgc\wtf\BitArray.h" />
+    <ClInclude Include="..\blinkgc\wtf\BitVector.h" />
+    <ClInclude Include="..\blinkgc\wtf\BitwiseOperations.h" />
+    <ClInclude Include="..\blinkgc\wtf\BloomFilter.h" />
+    <ClInclude Include="..\blinkgc\wtf\ByteOrder.h" />
+    <ClInclude Include="..\blinkgc\wtf\ByteSwap.h" />
+    <ClInclude Include="..\blinkgc\wtf\CheckedArithmetic.h" />
+    <ClInclude Include="..\blinkgc\wtf\Compiler.h" />
+    <ClInclude Include="..\blinkgc\wtf\ConditionalDestructor.h" />
+    <ClInclude Include="..\blinkgc\wtf\ContainerAnnotations.h" />
+    <ClInclude Include="..\blinkgc\wtf\CPU.h" />
+    <ClInclude Include="..\blinkgc\wtf\CryptographicallyRandomNumber.h" />
+    <ClInclude Include="..\blinkgc\wtf\CurrentTime.h" />
+    <ClInclude Include="..\blinkgc\wtf\DataLog.h" />
+    <ClInclude Include="..\blinkgc\wtf\DateMath.h" />
+    <ClInclude Include="..\blinkgc\wtf\DefaultAllocator.h" />
+    <ClInclude Include="..\blinkgc\wtf\Deque.h" />
+    <ClInclude Include="..\blinkgc\wtf\DoublyLinkedList.h" />
+    <ClInclude Include="..\blinkgc\wtf\dtoa.h" />
+    <ClInclude Include="..\blinkgc\wtf\dtoa\bignum-dtoa.h" />
+    <ClInclude Include="..\blinkgc\wtf\dtoa\bignum.h" />
+    <ClInclude Include="..\blinkgc\wtf\dtoa\cached-powers.h" />
+    <ClInclude Include="..\blinkgc\wtf\dtoa\diy-fp.h" />
+    <ClInclude Include="..\blinkgc\wtf\dtoa\double-conversion.h" />
+    <ClInclude Include="..\blinkgc\wtf\dtoa\double.h" />
+    <ClInclude Include="..\blinkgc\wtf\dtoa\fast-dtoa.h" />
+    <ClInclude Include="..\blinkgc\wtf\dtoa\fixed-dtoa.h" />
+    <ClInclude Include="..\blinkgc\wtf\dtoa\strtod.h" />
+    <ClInclude Include="..\blinkgc\wtf\dtoa\utils.h" />
+    <ClInclude Include="..\blinkgc\wtf\DynamicAnnotations.h" />
+    <ClInclude Include="..\blinkgc\wtf\FastAllocBase.h" />
+    <ClInclude Include="..\blinkgc\wtf\FastMalloc.h" />
+    <ClInclude Include="..\blinkgc\wtf\FilePrintStream.h" />
+    <ClInclude Include="..\blinkgc\wtf\Float32Array.h" />
+    <ClInclude Include="..\blinkgc\wtf\Float64Array.h" />
+    <ClInclude Include="..\blinkgc\wtf\Forward.h" />
+    <ClInclude Include="..\blinkgc\wtf\Functional.h" />
+    <ClInclude Include="..\blinkgc\wtf\GetPtr.h" />
+    <ClInclude Include="..\blinkgc\wtf\HashCountedSet.h" />
+    <ClInclude Include="..\blinkgc\wtf\HashFunctions.h" />
+    <ClInclude Include="..\blinkgc\wtf\HashIterators.h" />
+    <ClInclude Include="..\blinkgc\wtf\HashMap.h" />
+    <ClInclude Include="..\blinkgc\wtf\HashSet.h" />
+    <ClInclude Include="..\blinkgc\wtf\HashTable.h" />
+    <ClInclude Include="..\blinkgc\wtf\HashTableDeletedValueType.h" />
+    <ClInclude Include="..\blinkgc\wtf\HashTraits.h" />
+    <ClInclude Include="..\blinkgc\wtf\HexNumber.h" />
+    <ClInclude Include="..\blinkgc\wtf\InstanceCounter.h" />
+    <ClInclude Include="..\blinkgc\wtf\Int16Array.h" />
+    <ClInclude Include="..\blinkgc\wtf\Int32Array.h" />
+    <ClInclude Include="..\blinkgc\wtf\Int8Array.h" />
+    <ClInclude Include="..\blinkgc\wtf\IntegralTypedArrayBase.h" />
+    <ClInclude Include="..\blinkgc\wtf\LeakAnnotations.h" />
+    <ClInclude Include="..\blinkgc\wtf\LinkedHashSet.h" />
+    <ClInclude Include="..\blinkgc\wtf\LinkedStack.h" />
+    <ClInclude Include="..\blinkgc\wtf\ListHashSet.h" />
+    <ClInclude Include="..\blinkgc\wtf\Locker.h" />
+    <ClInclude Include="..\blinkgc\wtf\MainThread.h" />
+    <ClInclude Include="..\blinkgc\wtf\MathExtras.h" />
+    <ClInclude Include="..\blinkgc\wtf\MessageQueue.h" />
+    <ClInclude Include="..\blinkgc\wtf\Noncopyable.h" />
+    <ClInclude Include="..\blinkgc\wtf\NonCopyingSort.h" />
+    <ClInclude Include="..\blinkgc\wtf\NotFound.h" />
+    <ClInclude Include="..\blinkgc\wtf\NullPtr.h" />
+    <ClInclude Include="..\blinkgc\wtf\Optional.h" />
+    <ClInclude Include="..\blinkgc\wtf\OwnPtr.h" />
+    <ClInclude Include="..\blinkgc\wtf\OwnPtrCommon.h" />
+    <ClInclude Include="..\blinkgc\wtf\PageAllocator.h" />
+    <ClInclude Include="..\blinkgc\wtf\PartitionAlloc.h" />
+    <ClInclude Include="..\blinkgc\wtf\Partitions.h" />
+    <ClInclude Include="..\blinkgc\wtf\PassOwnPtr.h" />
+    <ClInclude Include="..\blinkgc\wtf\PassRefPtr.h" />
+    <ClInclude Include="..\blinkgc\wtf\PassTraits.h" />
+    <ClInclude Include="..\blinkgc\wtf\PrintStream.h" />
+    <ClInclude Include="..\blinkgc\wtf\RawPtr.h" />
+    <ClInclude Include="..\blinkgc\wtf\RefCounted.h" />
+    <ClInclude Include="..\blinkgc\wtf\RefCountedLeakCounter.h" />
+    <ClInclude Include="..\blinkgc\wtf\RefPtr.h" />
+    <ClInclude Include="..\blinkgc\wtf\RefVector.h" />
+    <ClInclude Include="..\blinkgc\wtf\RetainPtr.h" />
+    <ClInclude Include="..\blinkgc\wtf\SaturatedArithmetic.h" />
+    <ClInclude Include="..\blinkgc\wtf\SpinLock.h" />
+    <ClInclude Include="..\blinkgc\wtf\StaticConstructors.h" />
+    <ClInclude Include="..\blinkgc\wtf\StdLibExtras.h" />
+    <ClInclude Include="..\blinkgc\wtf\StreamBuffer.h" />
+    <ClInclude Include="..\blinkgc\wtf\StringExtras.h" />
+    <ClInclude Include="..\blinkgc\wtf\StringHasher.h" />
+    <ClInclude Include="..\blinkgc\wtf\TemporaryChange.h" />
+    <ClInclude Include="..\blinkgc\wtf\TerminatedArray.h" />
+    <ClInclude Include="..\blinkgc\wtf\TerminatedArrayBuilder.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\ASCIIFastPath.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\AtomicString.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\AtomicStringHash.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\Base64.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\CharacterNames.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\Collator.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\CString.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\IntegerToStringConversion.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\qt4\QChar.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\qt4\QString.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\qt4\QtGlobal.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\qt4\qunicodetables.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\qt4\UnicodeMacrosFromICU.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\qt4\UnicodeQt4.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\StringBuffer.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\StringBuilder.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\StringConcatenate.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\StringHash.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\StringImpl.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\StringOperators.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\StringStatics.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\StringUTF8Adaptor.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\StringView.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodec.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodecASCIIFastPath.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodecICU.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodecLatin1.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodecReplacement.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodecUserDefined.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodecUTF16.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodecUTF8.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\TextEncoding.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\TextEncodingRegistry.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\TextPosition.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\Unicode.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\UTF8.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\WTFString.h" />
+    <ClInclude Include="..\blinkgc\wtf\text\WTFStringUtil.h" />
+    <ClInclude Include="..\blinkgc\wtf\Threading.h" />
+    <ClInclude Include="..\blinkgc\wtf\ThreadingPrimitives.h" />
+    <ClInclude Include="..\blinkgc\wtf\ThreadRestrictionVerifier.h" />
+    <ClInclude Include="..\blinkgc\wtf\ThreadSafeRefCounted.h" />
+    <ClInclude Include="..\blinkgc\wtf\ThreadSpecific.h" />
+    <ClInclude Include="..\blinkgc\wtf\TreeNode.h" />
+    <ClInclude Include="..\blinkgc\wtf\TriState.h" />
+    <ClInclude Include="..\blinkgc\wtf\TypedArrayBase.h" />
+    <ClInclude Include="..\blinkgc\wtf\TypeTraits.h" />
+    <ClInclude Include="..\blinkgc\wtf\Uint16Array.h" />
+    <ClInclude Include="..\blinkgc\wtf\Uint32Array.h" />
+    <ClInclude Include="..\blinkgc\wtf\Uint8Array.h" />
+    <ClInclude Include="..\blinkgc\wtf\Uint8ClampedArray.h" />
+    <ClInclude Include="..\blinkgc\wtf\Utility.h" />
+    <ClInclude Include="..\blinkgc\wtf\Vector.h" />
+    <ClInclude Include="..\blinkgc\wtf\VectorTraits.h" />
+    <ClInclude Include="..\blinkgc\wtf\WeakPtr.h" />
+    <ClInclude Include="..\blinkgc\wtf\WTF.h" />
+    <ClInclude Include="..\blinkgc\wtf\WTFExport.h" />
+    <ClInclude Include="..\blinkgc\wtf\WTFThreadData.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

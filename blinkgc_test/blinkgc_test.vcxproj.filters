@@ -1,0 +1,950 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="blinkgc">
+      <UniqueIdentifier>{8eca758c-8bb0-48ec-9bd2-cb2c06a02913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blinkgc\platform">
+      <UniqueIdentifier>{acda3fcf-0fbb-4481-b7f1-59f4cc624fe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blinkgc\web">
+      <UniqueIdentifier>{53370a00-6e61-4ed5-adf7-75564c9966ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blinkgc\wtf">
+      <UniqueIdentifier>{ae86c71c-9387-4d25-9a78-df8979a7f78d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blinkgc\wtf\dtoa">
+      <UniqueIdentifier>{db2a62b7-5a93-4ed1-9a30-51ccba1cbf50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blinkgc\wtf\text">
+      <UniqueIdentifier>{2841a2e7-31f9-4835-ad01-e4d29696ac6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blinkgc\platform\asm">
+      <UniqueIdentifier>{b467c510-da08-4f45-b409-21523348127a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blinkgc\platform\heap">
+      <UniqueIdentifier>{e87cdcad-73de-4108-92ef-57c74380a441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blinkgc\wtf\text\qt4">
+      <UniqueIdentifier>{8e5ccf6c-ca90-4c90-8c99-076d7ac3a6d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\platform\asm\SaveRegisters_x86.cpp">
+      <Filter>blinkgc\platform\asm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\dtoa\bignum.cc">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\dtoa\bignum-dtoa.cc">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\dtoa\cached-powers.cc">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\dtoa\diy-fp.cc">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\dtoa\double-conversion.cc">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\dtoa\fast-dtoa.cc">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\dtoa\fixed-dtoa.cc">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\dtoa\strtod.cc">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\qt4\UnicodeQt4.cpp">
+      <Filter>blinkgc\wtf\text\qt4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\AtomicString.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\AtomicStringCF.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\Base64.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\CString.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\StringBuilder.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\StringCF.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\StringConcatenate.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\StringImpl.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\StringImplCF.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\StringStatics.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\TextCodec.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\TextCodecLatin1.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\TextCodecReplacement.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\TextCodecUserDefined.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\TextCodecUTF8.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\TextCodecUTF16.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\TextPosition.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\UTF8.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\WTFString.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\text\WTFStringUtil.cpp">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\AddressSpaceRandomization.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\ArrayBuffer.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\ArrayBufferBuilder.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\ArrayBufferContents.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\ArrayBufferView.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\ArrayPiece.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\Assertions.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\BitVector.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\CryptographicallyRandomNumber.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\CurrentTime.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\DataLog.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\DateMath.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\DefaultAllocator.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\dtoa.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\DynamicAnnotations.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\FastMalloc.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\FilePrintStream.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\HashTable.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\InstanceCounter.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\MainThread.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\PageAllocator.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\PartitionAlloc.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\Partitions.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\PrintStream.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\RefCountedLeakCounter.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\SizeLimits.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\ThreadingPthreads.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\ThreadingWin.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\ThreadSpecificWin.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\TypeTraits.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\WTF.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\wtf\WTFThreadData.cpp">
+      <Filter>blinkgc\wtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\web\CurrentTimeImpl.cpp">
+      <Filter>blinkgc\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\web\WebKit.cpp">
+      <Filter>blinkgc\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\web\WebMemoryDumpProvider.cpp">
+      <Filter>blinkgc\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\web\WebScheduler.cpp">
+      <Filter>blinkgc\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\web\WebSchedulerImpl.cpp">
+      <Filter>blinkgc\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\web\WebThreadImpl.cpp">
+      <Filter>blinkgc\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\web\WebTimerBase.cpp">
+      <Filter>blinkgc\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\web\WebTraceLocation.cpp">
+      <Filter>blinkgc\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\platform\heap\BlinkGCMemoryDumpProvider.cpp">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\platform\heap\CallbackStack.cpp">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\platform\heap\GCInfo.cpp">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\platform\heap\Heap.cpp">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\platform\heap\HeapAllocator.cpp">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\platform\heap\PagePool.cpp">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\platform\heap\PersistentNode.cpp">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\platform\heap\SafePoint.cpp">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\platform\heap\StackFrameDepth.cpp">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\platform\heap\ThreadState.cpp">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\platform\Platform.cpp">
+      <Filter>blinkgc\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blinkgc\platform\ScriptForbiddenScope.cpp">
+      <Filter>blinkgc\platform</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\blinkgc\platform\asm\SaveRegisters_win64.asm">
+      <Filter>blinkgc\platform\asm</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\dtoa\COPYING">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\dtoa\LICENSE">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\dtoa\README">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\text\StringImplMac.mm">
+      <Filter>blinkgc\wtf\text</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\text\StringMac.mm">
+      <Filter>blinkgc\wtf\text</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\BUILD.gn">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\CONTRIBUTORS.pthreads-win32">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\OWNERS">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\wtf.gyp">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\wtf.gypi">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\wtf.sln">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\wtf.vcxproj">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\wtf.vcxproj.filters">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\wtf_config.vcxproj">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\wtf_config.vcxproj.filters">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\wtf_tests.gyp">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\wtf_tests.sln">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\wtf_unittest_helpers.vcxproj">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\wtf_unittest_helpers.vcxproj.filters">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\wtf_unittests.vcxproj">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\wtf\wtf_unittests.vcxproj.filters">
+      <Filter>blinkgc\wtf</Filter>
+    </None>
+    <None Include="..\blinkgc\platform\heap\blink_heap.gypi">
+      <Filter>blinkgc\platform\heap</Filter>
+    </None>
+    <None Include="..\blinkgc\platform\heap\BUILD.gn">
+      <Filter>blinkgc\platform\heap</Filter>
+    </None>
+    <None Include="..\blinkgc\platform\heap\DEPS">
+      <Filter>blinkgc\platform\heap</Filter>
+    </None>
+    <None Include="..\blinkgc\platform\heap\OWNERS">
+      <Filter>blinkgc\platform\heap</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\blinkgc\wtf\dtoa\bignum.h">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\dtoa\bignum-dtoa.h">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\dtoa\cached-powers.h">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\dtoa\diy-fp.h">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\dtoa\double.h">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\dtoa\double-conversion.h">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\dtoa\fast-dtoa.h">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\dtoa\fixed-dtoa.h">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\dtoa\strtod.h">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\dtoa\utils.h">
+      <Filter>blinkgc\wtf\dtoa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\qt4\QChar.h">
+      <Filter>blinkgc\wtf\text\qt4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\qt4\QString.h">
+      <Filter>blinkgc\wtf\text\qt4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\qt4\QtGlobal.h">
+      <Filter>blinkgc\wtf\text\qt4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\qt4\qunicodetables.h">
+      <Filter>blinkgc\wtf\text\qt4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\qt4\UnicodeMacrosFromICU.h">
+      <Filter>blinkgc\wtf\text\qt4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\qt4\UnicodeQt4.h">
+      <Filter>blinkgc\wtf\text\qt4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\ASCIIFastPath.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\AtomicString.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\AtomicStringHash.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\Base64.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\CharacterNames.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\Collator.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\CString.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\IntegerToStringConversion.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\StringBuffer.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\StringBuilder.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\StringConcatenate.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\StringHash.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\StringImpl.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\StringOperators.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\StringStatics.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\StringUTF8Adaptor.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\StringView.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodec.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodecASCIIFastPath.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodecICU.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodecLatin1.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodecReplacement.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodecUserDefined.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodecUTF8.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\TextCodecUTF16.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\TextEncoding.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\TextEncodingRegistry.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\TextPosition.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\Unicode.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\UTF8.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\WTFString.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\text\WTFStringUtil.h">
+      <Filter>blinkgc\wtf\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\AddressSanitizer.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\AddressSpaceRandomization.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Alignment.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\ArrayBuffer.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\ArrayBufferBuilder.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\ArrayBufferContents.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\ArrayBufferView.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\ArrayPiece.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\ASCIICType.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Assertions.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Atomics.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\BitArray.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\BitVector.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\BitwiseOperations.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\BloomFilter.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\ByteOrder.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\ByteSwap.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\CheckedArithmetic.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Compiler.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\ConditionalDestructor.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\ContainerAnnotations.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\CPU.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\CryptographicallyRandomNumber.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\CurrentTime.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\DataLog.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\DateMath.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\DefaultAllocator.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Deque.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\DoublyLinkedList.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\dtoa.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\DynamicAnnotations.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\FastAllocBase.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\FastMalloc.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\FilePrintStream.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Float32Array.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Float64Array.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Forward.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Functional.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\GetPtr.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\HashCountedSet.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\HashFunctions.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\HashIterators.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\HashMap.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\HashSet.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\HashTable.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\HashTableDeletedValueType.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\HashTraits.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\HexNumber.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\InstanceCounter.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Int8Array.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Int16Array.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Int32Array.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\IntegralTypedArrayBase.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\LeakAnnotations.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\LinkedHashSet.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\LinkedStack.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\ListHashSet.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Locker.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\MainThread.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\MathExtras.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\MessageQueue.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Noncopyable.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\NonCopyingSort.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\NotFound.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\NullPtr.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Optional.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\OwnPtr.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\OwnPtrCommon.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\PageAllocator.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\PartitionAlloc.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Partitions.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\PassOwnPtr.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\PassRefPtr.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\PassTraits.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\PrintStream.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\RawPtr.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\RefCounted.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\RefCountedLeakCounter.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\RefPtr.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\RefVector.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\RetainPtr.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\SaturatedArithmetic.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\SpinLock.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\StaticConstructors.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\StdLibExtras.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\StreamBuffer.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\StringExtras.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\StringHasher.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\TemporaryChange.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\TerminatedArray.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\TerminatedArrayBuilder.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Threading.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\ThreadingPrimitives.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\ThreadRestrictionVerifier.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\ThreadSafeRefCounted.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\ThreadSpecific.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\TreeNode.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\TriState.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\TypedArrayBase.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\TypeTraits.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Uint8Array.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Uint8ClampedArray.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Uint16Array.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Uint32Array.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Utility.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\Vector.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\VectorTraits.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\WeakPtr.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\WTF.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\WTFExport.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\wtf\WTFThreadData.h">
+      <Filter>blinkgc\wtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\web\CurrentTimeImpl.h">
+      <Filter>blinkgc\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\web\WebKit.h">
+      <Filter>blinkgc\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\web\WebSchedulerImpl.h">
+      <Filter>blinkgc\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\web\WebThreadImpl.h">
+      <Filter>blinkgc\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\web\WebTimerBase.h">
+      <Filter>blinkgc\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\BlinkGCMemoryDumpProvider.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\CallbackStack.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\GarbageCollected.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\GCInfo.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\Handle.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\Heap.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\HeapAllocator.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\HeapLinkedStack.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\HeapTerminatedArray.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\HeapTerminatedArrayBuilder.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\InlinedGlobalMarkingVisitor.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\MarkingVisitor.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\MarkingVisitorImpl.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\PageMemory.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\PagePool.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\PersistentNode.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\SafePoint.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\StackFrameDepth.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\ThreadingTraits.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\ThreadState.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\TraceTraits.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\heap\Visitor.h">
+      <Filter>blinkgc\platform\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\Platform.h">
+      <Filter>blinkgc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\PlatformExport.h">
+      <Filter>blinkgc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\ScriptForbiddenScope.h">
+      <Filter>blinkgc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\Task.h">
+      <Filter>blinkgc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blinkgc\platform\traceevent.h">
+      <Filter>blinkgc\platform</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
